@@ -8,57 +8,61 @@ body {
   font-size: 1rem;
   background: #2fbf77;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
+  position: relative;
 }
-body .login {
-  height: 450px;
+
+.login {
+  height: 550px;
   width: 400px;
   background: #1e1c1c;
-  display: flex;
   padding: 30px;
-  justify-content: space-evenly;
+  display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
-body .login .image {
+.login .image {
   height: 150px;
   width: 150px;
   color: #fff;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-body .login .image img {
+.login .image img {
   border-radius: 50%;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-body .login .formbox {
+.login .formbox {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
 }
-body .login .formbox h2 {
+.login .formbox h2 {
   font-size: 2em;
   color: #fff;
 }
-body .login .formbox .inputbox {
+.login .formbox .inputbox {
   padding: 5px;
   margin: 5px 0;
   width: 100%;
 }
-body .login .formbox .inputbox p {
+.login .formbox .inputbox p {
   color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
-body .login .formbox .inputbox input {
+.login .formbox .inputbox input {
   padding: 15px;
   background: #545454;
   width: 100%;
@@ -68,13 +72,16 @@ body .login .formbox .inputbox input {
   border-radius: 5px;
   color: #fff;
 }
-body .login .formbox .inputbox input::-moz-placeholder {
+.login .formbox .inputbox input::-moz-placeholder {
   color: #fff;
 }
-body .login .formbox .inputbox input::placeholder {
+.login .formbox .inputbox input::placeholder {
   color: #fff;
 }
-body .login .formbox a {
+.login .formbox .inputbox input span {
+  color: red;
+}
+.login .formbox a {
   background-color: #2fbf77;
   color: #fff;
   padding: 10px 45px;
@@ -83,16 +90,104 @@ body .login .formbox a {
   margin: 10px 0;
   transition: 0.5s;
 }
-body .login .formbox a:hover {
+.login .formbox a:hover {
   letter-spacing: 2px;
   transform: translateY(-5px);
+}
+.login .formbox p {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.container {
+  display: none;
+}
+.container .signup {
+  height: 650px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1e1c1c;
+  padding: 30px;
+  flex-direction: column;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .signup .image {
+  height: 150px;
+  width: 150px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .signup .image img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .signup .formbox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container .signup .formbox h2 {
+  font-size: 2em;
+  color: #fff;
+}
+.container .signup .formbox .inputbox {
+  padding: 5px;
+  margin: 5px 0;
+  width: 100%;
+}
+.container .signup .formbox .inputbox p {
+  color: #fff;
+}
+.container .signup .formbox .inputbox input {
+  padding: 15px;
+  background: #545454;
+  width: 100%;
+  border: none;
+  margin: 5px 0;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.container .signup .formbox .inputbox input::-moz-placeholder {
+  color: #fff;
+}
+.container .signup .formbox .inputbox input::placeholder {
+  color: #fff;
+}
+.container .signup .formbox a {
+  background-color: #2fbf77;
+  color: #fff;
+  padding: 10px 45px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 10px 0;
+  transition: 0.5s;
+}
+.container .signup .formbox a:hover {
+  letter-spacing: 2px;
+  transform: translateY(-5px);
+}
+.container .signup .formbox p {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 header {
   padding-top: 10px;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 }
 header .container {
   display: flex;

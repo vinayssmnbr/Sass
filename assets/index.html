@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,45 +8,79 @@
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
-    <!-- <header>
-        <div class="container">
-            <div class="logopart"></div>
-           
-            <nav>
-                <ul>
-                    <li><a href=""></a>1</li>
-                    <li><a href=""></a>2</li>
-                    <li><a href=""></a>3</li>
-                    <li><a href=""></a>4</li>
-                    <li><a href=""></a>5</li>
-                </ul>
-            </nav>
-            
+
+    <div class="login" >
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOuxrvcNMfGLh73uKP1QqYpKoCB0JLXiBMvA&usqp=CAU"
+                alt="">
         </div>
-    </header> -->
-  <div class="login">
-    <div class="image">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOuxrvcNMfGLh73uKP1QqYpKoCB0JLXiBMvA&usqp=CAU" alt="">
+        <form class="formbox" id="myform">
+        <h2>Sign In</h2>
+            <div class="inputbox">
+                <p>Email</p>
+                <!-- <label for="email">Name</label> -->
+                <input type="text" placeholder="Enter Email" >
+                <span class="formerror">this field is required</span>
+            </div>
+            <div class="inputbox">
+                <p>Password</p>
+                <input type="password" name="txt_password" onmouseover="this.type='text'"
+                    onmouseout="this.type='password'" placeholder="Enter password" required />
+                    <span class="error"></span>
+            </div>
+            <a id="submit" href="">login</a>
+            <p class="next" id="login_form" >Sign Up</p>
+        </form>
     </div>
-    <div class="formbox">
-        <h2>login</h2>
-        <div class="inputbox">
-            <p>Email</p>
-            <input type="text" placeholder="Enter Email" required>
+</form>
+    <div class="container">
+    <div class="signup">
+        <div class="image">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOuxrvcNMfGLh73uKP1QqYpKoCB0JLXiBMvA&usqp=CAU"
+                alt="">
         </div>
-        <div class="inputbox">
-            <p>Password</p>
-            <!-- <input type="password" placeholder="Enter Password"> -->
-            <input type="password" name="txt_password" onmouseover="this.type='text'"
-       onmouseout="this.type='password'" placeholder="Enter password" required/>
-        </div>
-        <a href="">login</a>
+        <form class="formbox">
+            <h2>Sign Up</h2>
+            <div class="inputbox">
+                <p>Name</p>
+                <input type="text" placeholder="Enter Name" required>
+            </div>
+            <div class="inputbox">
+                <p>Email</p>
+                <input type="text" placeholder="Enter Email" required>
+            </div>
+            <div class="inputbox">
+                <p>Password</p>
+                <input type="password" name="txt_password" onmouseover="this.type='text'"
+                    onmouseout="this.type='password'" placeholder="Enter password" required />
+            </div>
+            <a href="">Signup</a>
+            <p class="next" id="signup_form">Sign In</p>
+        </form>
     </div>
-  </div>
+</div>
 </body>
+
 </html>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script>
+    $(document).ready(function () {
+
+        $('#login_form').click(function () {
+            $('.login').hide();
+            $('.container').show();
+
+        })
+        $('#signup_form').click(function () {
+            $('.container').hide();
+            $('.login').show();
+
+        })
+
+
+    })
 
 </script>
+
