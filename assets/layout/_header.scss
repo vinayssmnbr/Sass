@@ -1,0 +1,9 @@
+header{
+    @include paddingT(top,10);
+
+    @include flexBox(center,start);
+    .container{
+    @include flexBox(center,end);
+
+    }
+}

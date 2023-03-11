@@ -1,0 +1,8 @@
+@mixin paddingT($position,$unit){
+    padding-#{$position}:$unit + px;
+}
+@mixin flexBox($A,$J){
+    display: flex;
+    align-items: $A;
+    justify-content: $J;
+}
